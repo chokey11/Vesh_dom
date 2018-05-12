@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background-color: #D8E3AB;
+  font-family: "Roboto", sans-serif;
+}
+
+.top-bar {
+  border-top: none;
+  height: 69px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  margin-top: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.top-navigation {
+  display: inline-block;
+  text-align: center;
+  width: 600px;
+}
+
+.top-nav {
+  width: 970px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.top-nav_menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+}
+.top-nav_menu li {
+  margin-left: 19px;
+}
+.top-nav_menu a {
+  font-size: 14px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.top-nav_contact {
+  float: right;
+  display: inline-block;
+  width: 200px;
+  height: 80px;
+}
+.top-nav_contact .tel {
+  font-family: roboto;
+  height: 21px;
+  color: #663300;
+  font-size: 20px;
+  margin: 0;
+}
+.top-nav_contact .consultation {
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=main.css.map */
