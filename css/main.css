@@ -1,66 +1,207 @@
+@font-face {
+  font-family: "BebasRegular";
+  src: url("../fonts/BebasRegular/BebasRegular.eot");
+  src: url("../fonts/BebasRegular/BebasRegular.woff");
+  src: url("../fonts/BebasRegular/BebasRegular.ttf");
+}
+@font-face {
+  font-family: "BebasBold";
+  src: url("../fonts/BebasBold/BebasBold.eot");
+  src: url("../fonts/BebasBold/BebasBold.eot?#iefix");
+  src: url("../fonts/BebasBold/BebasBold.woff");
+  src: url("../fonts/BebasBold/BebasBold.ttf");
+}
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeueBold/BebasNeueBold.otf");
+  src: url("../fonts/BebasNeueBold/BebasNeueBold.ttf");
+}
+@font-face {
+  font-family: "RobotoBlack";
+  src: url("../fonts/RobotoBlack/Robotoblack.ttf");
+  src: url("../fonts/RobotoBlack/Robotoblack.woff");
+  src: url("../fonts/RobotoBlack/Robotoblack.woff2");
+}
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../fonts/RobotoLight/RobotoLight.ttf");
+  src: url("../fonts/RobotoLight/RobotoLight.woff");
+  src: url("../fonts/RobotoLight/RobotoLight.woff2");
+}
+@font-face {
+  font-family: "RobotoMedium";
+  src: url("../fonts/RobotoMedium/RobotoMedium.ttf");
+  src: url("../fonts/RobotoMedium/RobotoMedium.woff");
+  src: url("../fonts/RobotoMedium/RobotoMedium.woff2");
+}
 body {
   margin: 0;
-  background-color: #D8E3AB;
-  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
 }
 
-.top-bar {
-  border-top: none;
-  height: 69px;
-  position: absolute;
+.header {
   width: 100%;
-  top: 0;
-  margin-top: 13px;
+  max-width: 937px;
+  margin: 0 auto;
+  padding-top: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.logo {
-  display: inline-block;
-}
-
-.top-navigation {
-  display: inline-block;
-  text-align: center;
-  width: 600px;
-}
-
-.top-nav {
-  width: 970px;
-  background-color: #fff;
+.nav {
   margin: 0 auto;
 }
-.top-nav_menu {
+.nav_menu {
   list-style: none;
+  padding-left: 23px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  float: left;
 }
-.top-nav_menu li {
-  margin-left: 19px;
+.nav_menu li {
+  margin-right: 17px;
 }
-.top-nav_menu a {
-  font-size: 14px;
-  text-decoration: underline;
+.nav_menu a {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 550;
+  color: #663300;
+}
+
+.contact {
+  margin: 0 auto;
+  color: #663300;
+}
+.contact_tel {
+  font-family: "RobotoLight";
+  font-weight: 300;
+  font-size: 17.5px;
+  letter-spacing: 0.2px;
+}
+.contact_tel span {
+  font-family: "RobotoMedium";
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+.contact_consultation {
+  font-family: "Roboto";
+  font-size: 13px;
+  letter-spacing: -0.07px;
+}
+
+.first-box {
+  width: 100%;
+  height: 710px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(../image/back.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+.first-box_text {
+  color: #ffffff;
+}
+.first-box_text h1 {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: "BebasNeue";
+}
+.first-box_text p {
+  text-align: center;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+.services_box {
+  width: 100%;
+  max-width: 954px;
+  margin: 0 auto;
+  padding-top: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.services_box_logo {
+  padding-left: 350px;
+  text-align: center;
+}
+.services_box h1 {
+  color: #663300;
+  font-family: "BebasRegular";
+  font-size: 48px;
   text-transform: uppercase;
 }
-.top-nav_contact {
-  float: right;
+
+.service_content {
+  padding-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price_button {
+  margin: 50px auto;
+  text-align: center;
+  background-color: #7ec52e;
+  -webkit-box-shadow: 0 3px 0 #33691e;
+          box-shadow: 0 3px 0 #33691e;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 384px;
+  height: 71px;
+}
+.price_button p {
   display: inline-block;
-  width: 200px;
-  height: 80px;
+  font-color: #000000;
+  font-family: "BebasNeue";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 20px;
 }
-.top-nav_contact .tel {
-  font-family: roboto;
-  height: 21px;
-  color: #663300;
-  font-size: 20px;
-  margin: 0;
-}
-.top-nav_contact .consultation {
-  font-size: 13px;
+
+.second_box {
+  width: 100%;
+  height: 474px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url(../image/back_2.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
