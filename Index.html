@@ -8,10 +8,14 @@
 	<title>Vesh_Dom</title>
 </head>
 <body>
+
+	<!-- START HEADER -->
+
 	<header class="header">
 		<div class="logo">
 			<img src="image/Logo.png" alt="vesh_dom">
 		</div>
+
 		<nav class="nav">
 			<ul class="nav_menu">
 				<li><a href="#">Услуги</a></li>
@@ -29,16 +33,34 @@
 			<div class="contact_consultation">Консультация специалиста</div>
 		</div>
 	</header>
+
+	<!-- END HEADER -->
+
+	<!-- Используешь div вместо section. Для секций (экранов) есть тег section, у него должен быть внутри заголовок обязательно. В этой ситуации этот тег подходит -->
+
+<!-- <div class="greeting">
+		<div class="greeting__inner">
+			<h1 class="greeting__title">Строительство деревянных <br> домов и бань </h1>
+			<h2 class="greeting__subtitle">Вековые традиции, <br> современный комфорт!</h2>
+		</div>
+	</div> -->
+
+
 	<div class="first-box">
 		<div class="first-box_text">
-			<h1>Строительство деревянных <br>
-				домов и бань </h1>
-				<p>Вековые традиции, <br>
-				современный комфорт!</p>
+			<h1>Строительство деревянных <br> домов и бань </h1>
+				<p>Вековые традиции, <br> современный комфорт!</p>
+
+				<!-- Не перености текст после br, я и так понял что он переносит текст, ориентироваться в коде выше сложно -->
+
 		</div>
 	</div>
+
+	<!-- класс просто service, box - лишнее -->
+
 	<div class="services_box">
 		<div class="services_box_logo">
+			<!-- это изображение не относится к контенту страницы, его сделай фоном. Как - спроси у меня -->
 			<img src="image/Logo_services.png" alt="Logo_services">
 				<h1>Услуги, которые <br> мы предлагаем</h1>
 			</div>
@@ -52,22 +74,61 @@
 				<li>Отделка сруба</li>
 			</ul>
 		</div>
+
+
+	<!-- Это кнопка? Значит это не div>p а button -->
 	<div class="price_button">
 		<p>Узнать цены</p>
 	</div>
 	</div>
+
+
+	<!-- Исправленный пример -->
+
+	<!-- <section class="services">
+		<h2 class="services__title">Услуги, которые <br> мы предлагаем</h1>
+
+		<div class="services__content">
+			<img class="services__img" src="image/img_services.png" alt="img_srub">
+
+			<ul class="services__accordeon services-acc">
+				<li class="services-accord__item">Изготовление сруба</li>
+				<li class="services-accord__item">Доставка</li>
+				<li class="services-accord__item">Изготовление фундамента</li>
+				<li class="services-accord__item">Монтаж кровли</li>
+				<li class="services-accord__item">Отделка сруба</li>
+			</ul>
+		</div>
+
+		<button class="service__button">Узнать цены</button>
+	</section> -->
+
+
+
+
+
+
+
+
+	<!-- Посмотришь на пример выше поймешь что тут не так -->
+	<!-- Second box мне вообще ни о чем не говорит. -->
 	<div class="second_box">
-		<div class="second_box_text"><p>Получите бесплатную консультацию специалиста,<br> 
-		который расскажет, как построить <br>
-		дом вашей мечты!<p>
+		<!-- Ниже h2 а не div>p -->
+		<div class="second_box_text">
+			<p>Получите бесплатную консультацию специалиста,<br>который расскажет, как построить <br>дом вашей мечты!<p>
 		</div>
+
+		<!-- Тут form.second__form-->
 		<div class="second_box_fio">
-			<div class="fio_text">Имя, Фамилия контактного лица:</div> 
+			<!-- это .second__label -->
+			<div class="fio_text">Имя, Фамилия контактного лица:</div>
 		</div>
+
+		<!-- Тут button.second__button а не div>p, прекращай делать кнопки дивами -->
 		<div class="second_box_button">
 			<p>Оставить заявку</p>
 		</div>
 	</div>
 </body>
-	
+
 </html>
