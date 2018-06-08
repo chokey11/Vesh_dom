@@ -252,14 +252,15 @@ body {
           align-items: center;
   margin-left: -40px;
 }
-.gallery__images li {
+.gallery li {
   list-style-type: none;
 }
-.gallery__images li img {
+.gallery li img {
   max-width: 292px;
 }
-.gallery .price {
-  padding-top: 5000px;
+
+.price {
+  padding-top: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
