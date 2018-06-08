@@ -6,8 +6,12 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/accordeon.js"></script>
 	<title>Vesh_Dom</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i&amp;subset=cyrillic" rel="stylesheet">
+	<link href="http://allfont.ru/allfont.css?fonts=pt-serif-italic" rel="stylesheet" type="text/css" />
 </head>
 <body>
+
+	<div class="container">
 
 	<!-- START HEADER -->
 
@@ -17,76 +21,33 @@
 		</div>
 
 		<nav class="nav">
-			<ul class="nav_menu">
-				<li><a href="#">Услуги</a></li>
-				<li><a href="#">Наши работы</a></li>
-				<li><a href="#">Стоимость</a></li>
-				<li><a href="#">Проекты</a></li>
-				<li><a href="#">ОТЗЫВЫ</a></li>
-				<li><a href="#">Контакты</a></li>
+			<ul class="nav__menu">
+				<li class="nav__item"><a class="nav__link" href="#">Услуги</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">Наши работы</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">Стоимость</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">Проекты</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">ОТЗЫВЫ</a></li>
+				<li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
 			</ul>
 		</nav>
 		<div class="contact">
-			<div class="contact_tel">+7(962)
+			<div class="contact__tel">+7(962)
 				<span>669-96-48</span>
 			</div>
-			<div class="contact_consultation">Консультация специалиста</div>
+			<div class="contact__consultation">Консультация специалиста</div>
 		</div>
 	</header>
 
-	<!-- END HEADER -->
-
-	<!-- Используешь div вместо section. Для секций (экранов) есть тег section, у него должен быть внутри заголовок обязательно. В этой ситуации этот тег подходит -->
-
-<!-- <div class="greeting">
+	<div class="greeting">
 		<div class="greeting__inner">
 			<h1 class="greeting__title">Строительство деревянных <br> домов и бань </h1>
 			<h2 class="greeting__subtitle">Вековые традиции, <br> современный комфорт!</h2>
 		</div>
-	</div> -->
-
-
-	<div class="first-box">
-		<div class="first-box_text">
-			<h1>Строительство деревянных <br> домов и бань </h1>
-				<p>Вековые традиции, <br> современный комфорт!</p>
-
-				<!-- Не перености текст после br, я и так понял что он переносит текст, ориентироваться в коде выше сложно -->
-
-		</div>
 	</div>
 
-	<!-- класс просто service, box - лишнее -->
-
-	<div class="services_box">
-		<div class="services_box_logo">
-			<!-- это изображение не относится к контенту страницы, его сделай фоном. Как - спроси у меня -->
-			<img src="image/Logo_services.png" alt="Logo_services">
-				<h1>Услуги, которые <br> мы предлагаем</h1>
-			</div>
-		<div class="service_content">
-			<img src="image/img_services.png" alt="img_srub">
-			<ul class="service_menu">
-				<li>Изготовление сруба</li>
-				<li>Доставка</li>
-				<li>Изготовление фундамента</li>
-				<li>Монтаж кровли</li>
-				<li>Отделка сруба</li>
-			</ul>
-		</div>
-
-
-	<!-- Это кнопка? Значит это не div>p а button -->
-	<div class="price_button">
-		<p>Узнать цены</p>
-	</div>
-	</div>
-
-
-	<!-- Исправленный пример -->
-
-	<!-- <section class="services">
-		<h2 class="services__title">Услуги, которые <br> мы предлагаем</h1>
+	<section class="services">
+		<img class="services__logo" src="image/Logo_services.png" alt="">
+		<h2 class="services__title">Услуги, которые <br> мы предлагаем</h2>
 
 		<div class="services__content">
 			<img class="services__img" src="image/img_services.png" alt="img_srub">
@@ -99,36 +60,47 @@
 				<li class="services-accord__item">Отделка сруба</li>
 			</ul>
 		</div>
-
-		<button class="service__button">Узнать цены</button>
-	</section> -->
-
-
-
-
-
-
-
-
+		<button class="services__button">Узнать цены</button>
+	</section>
 	<!-- Посмотришь на пример выше поймешь что тут не так -->
 	<!-- Second box мне вообще ни о чем не говорит. -->
-	<div class="second_box">
-		<!-- Ниже h2 а не div>p -->
-		<div class="second_box_text">
-			<p>Получите бесплатную консультацию специалиста,<br>который расскажет, как построить <br>дом вашей мечты!<p>
+	<section class="form">
+		<div class="form__text">
+			<h2>Получите бесплатную консультацию специалиста,<br>который расскажет, как построить <br>дом вашей мечты!</h2>
 		</div>
 
 		<!-- Тут form.second__form-->
-		<div class="second_box_fio">
+		<div class="form__fio">
 			<!-- это .second__label -->
-			<div class="fio_text">Имя, Фамилия контактного лица:</div>
+			<span class="fio__text">Имя, Фамилия контактного лица:</span>
 		</div>
+		<input class="form__input" type="">
 
 		<!-- Тут button.second__button а не div>p, прекращай делать кнопки дивами -->
-		<div class="second_box_button">
-			<p>Оставить заявку</p>
-		</div>
-	</div>
+		<button class="form__button">Оставить заявку
+		</button>
+	</section>
+	<section class="gallery">
+		<img class="gallery__logo" src="image/Logo_services.png" alt="">
+		<span class="gallery__text">Наши работы</span>
+		<ul class="gallery__images">
+			<li><img src="image/gallery/img-big.png" alt=""></li>
+			<li><img src="image/gallery/img-2.png" alt=""></li>
+			<li><img src="image/gallery/img-3.png" alt=""></li>
+			<li><img src="image/gallery/img-4.png" alt=""></li>
+			<li><img src="image/gallery/img-5.png" alt=""></li>
+			<li><img src="image/gallery/img-6.png" alt=""></li>		
+		</ul>	
+	</section>	
+
+	<section class="prices">
+		<img class="price__logo" src="image/Logo_services.png" alt="">
+		<h2 class="price__title">Стоимость</h2>
+		<span class="price__title-text">Примерный расчет средств, которые Вы можете инвестировать в экологически чистый материал, комфортный микроклимат в доме и позитивное влияние на здоровье членов семьи</span>
+		
+		
+	</section>
+</div>
 </body>
 
 </html>
