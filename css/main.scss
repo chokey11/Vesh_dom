@@ -106,14 +106,15 @@ body {
 }
 
 .greeting {
-	height: 710px;
+	position: absolute;
+	width:100%;
+	left:0;
+	right:0;
+	height: 700px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: url(../image/back.png) no-repeat center;
-	background-size: cover;
-	position: relative;
-	z-index: 0;
 
 .greeting__inner {
 		color: #ffffff;
@@ -136,7 +137,7 @@ body {
 }
 
 .services {
-	padding-top: 40px;
+	padding-top: 740px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -169,29 +170,29 @@ body {
 	justify-content: space-between;
 	}
 
-#accordeon {
+	#accordeon {
 	margin: 0 auto;
     width: 325px;
     margin-left:0 0 0 15px;
-}
+	}
 
-.acc-head {
-    padding: 5px 10px;
-    font: italic 400 24px/25px 'Serif';
-    cursor: pointer;   
-    list-style-image: url(../image/Accordeon/triangle.png);
-    span{
-    	text-decoration:none;
-  		border-bottom: 0.8px dashed #000;
-    }
-}
+	.acc-head {
+   	 	padding: 5px 10px;
+   		font: italic 400 24px/25px 'Serif';
+    	cursor: pointer;   
+    	list-style-image: url(../image/Accordeon/triangle.png);
+   		span{
+    		text-decoration:none;
+  			border-bottom: 0.8px dashed #000;
+   		 }
+	}
 
-.acc-body {
-    padding: 8px 0 10px 15px;
-    font: 900 17px/27px 'Roboto';
-    color: #424242;
-    list-style-type: none;
-    display: none;
+	.acc-body {
+    	padding: 8px 0 10px 15px;
+   	 	font: 900 17px/27px 'Roboto';
+   	 	color: #424242;
+    	list-style-type: none;
+    	display: none;
 	}
 
 	&__button {
@@ -207,11 +208,13 @@ body {
 }
 
 .form {
+	position: absolute;
+	width:100%;
+	left:0;
+	right:0;
 	text-align: center;	
-	height: 460px;
-	background: url(../image/back_2.png) no-repeat center;
-	background-size: cover;
-	z-index: 0;
+	height: 480px;
+	background: url(../image/bg-form.png) no-repeat center;
 
 	&__text {		
 		color: #fff;
@@ -245,7 +248,7 @@ body {
 }
 
 .gallery {
-	padding-top: 60px;
+	padding-top: 540px;
 	align-items: center;
 
 	&__logo {
@@ -477,16 +480,26 @@ body {
 }
 
 .cooperation {
-	margin: 0 auto;
+	position: absolute;
+	width:100%;
+	left:0;
+	right:0;
 	height: 600px;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	text-align: center;
-	background: url(../image/background.png) no-repeat center;
+	background: url(../image/background__coop.png) no-repeat center;
 	background-size: cover;
-	position: relative;
 	z-index: 0;
+	&__inf {
+		max-width: 937px;
+		height: 600px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		text-align: center;
+	}
 
 	&__title {
 		padding-top: 30px;
@@ -528,7 +541,7 @@ body {
 	}
 }
 .reviews {
-	padding-top: 40px;
+	padding-top: 640px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -571,6 +584,10 @@ body {
 	}	
 }
 .map{
+	position: absolute;
+	width:100%;
+	left:0;
+	right:0;
 	margin: 0 auto;
 	height: 633px;
 	padding-top: 100px;
@@ -593,7 +610,7 @@ body {
 
 	&__popup{
 		margin: 0 auto;
-		right:505px;
+		right:40.4%;
 		background:#ffffff;
    		position: absolute;
    		padding: 5px;
@@ -615,7 +632,7 @@ body {
 		display: block;
 		outline: none;
 		background-color: #7ec52e;
-		box-shadow: 3px 3px 3px #33691e;
+		box-shadow: 0 -3px rgb(53,167,110) inset;
 		border-radius: 10px;
 		padding: 28px 140px 28px 140px;
 		font: 400 32px/25px 'BebasNeue';

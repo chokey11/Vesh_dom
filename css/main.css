@@ -106,7 +106,11 @@ body {
 }
 
 .greeting {
-  height: 710px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,9 +121,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background: url(../image/back.png) no-repeat center;
-  background-size: cover;
-  position: relative;
-  z-index: 0;
 }
 .greeting .greeting__inner {
   color: #ffffff;
@@ -138,7 +139,7 @@ body {
 }
 
 .services {
-  padding-top: 40px;
+  padding-top: 740px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,11 +211,13 @@ body {
 }
 
 .form {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
   text-align: center;
-  height: 460px;
-  background: url(../image/back_2.png) no-repeat center;
-  background-size: cover;
-  z-index: 0;
+  height: 480px;
+  background: url(../image/bg-form.png) no-repeat center;
 }
 .form__text {
   color: #fff;
@@ -244,7 +247,7 @@ body {
 }
 
 .gallery {
-  padding-top: 60px;
+  padding-top: 540px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -473,7 +476,10 @@ body {
 }
 
 .cooperation {
-  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
   height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,10 +489,21 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
-  background: url(../image/background.png) no-repeat center;
+  background: url(../image/background__coop.png) no-repeat center;
   background-size: cover;
-  position: relative;
   z-index: 0;
+}
+.cooperation__inf {
+  max-width: 937px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
 }
 .cooperation__title {
   padding-top: 30px;
@@ -523,7 +540,7 @@ body {
 }
 
 .reviews {
-  padding-top: 40px;
+  padding-top: 640px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,6 +588,10 @@ body {
 }
 
 .map {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
   margin: 0 auto;
   height: 633px;
   padding-top: 100px;
@@ -593,7 +614,7 @@ body {
 }
 .map__popup {
   margin: 0 auto;
-  right: 505px;
+  right: 40.4%;
   background: #ffffff;
   position: absolute;
   padding: 5px;
@@ -615,8 +636,8 @@ body {
   display: block;
   outline: none;
   background-color: #7ec52e;
-  -webkit-box-shadow: 3px 3px 3px #33691e;
-          box-shadow: 3px 3px 3px #33691e;
+  -webkit-box-shadow: 0 -3px #35a76e inset;
+          box-shadow: 0 -3px #35a76e inset;
   border-radius: 10px;
   padding: 28px 140px 28px 140px;
   font: 400 32px/25px 'BebasNeue';
